@@ -1,0 +1,15 @@
+{
+  "name": "@bryopsida/openmct-service",
+  "version": "0.1.0",
+  "description": "OpenMCT wrapped in express with systemd unit file and apparmor profile",
+  "main": "service.mjs",
+  "scripts": {
+    "test": "npm --test *.spec.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "openmct": "^4.0.0"
+  }
+}

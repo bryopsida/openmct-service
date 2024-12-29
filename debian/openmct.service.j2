@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenMCT
+After=network.target
+
+[Service]
+ExecStart=/opt/{{ openmct_org}}/openmct/service.mjs
+WorkingDirectory=/opt/{{ openmct_org }}/openmct
+User={{ openmct_uid }}
+Group={{ openmct_gid }}
+Restart=always
+RestartSec=10
+Environment="DOTENV_CONFIG_PATH={{ openmct_dotenv_path }}"
+[Install]
+WantedBy=multi-user.target
